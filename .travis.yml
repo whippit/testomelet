@@ -9,6 +9,6 @@ script: nosetests --verbosity=3 -x --with-coverage --cover-package=omelet
 services: 
     - docker
 before_script:
-    - docker ps | grep -q core_ram
+    - docker ps 
 env:
     - SYN_DOCKER=1
